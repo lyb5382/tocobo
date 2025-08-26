@@ -3,7 +3,7 @@ import Nav from './Nav'
 import Util from './Util'
 import TopBanner from './TopBanner'
 import { headerData } from '../util/header'
-import "../styles/components/header.scss"
+import '../styles/components/header.scss'
 const Header = () => {
 
   const headerLogo = headerData.logo
@@ -13,9 +13,9 @@ const Header = () => {
       <TopBanner />
 
       <header>
-        <div className="inner">
+        <div className='inner'>
           <Nav />
-          <h1 className="tit">
+          <h1 className='tit'>
             <a href={headerLogo.href}>
               <img src={headerLogo.src} alt={headerLogo.alt} />
             </a>

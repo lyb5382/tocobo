@@ -5,9 +5,7 @@ import { headerData } from '../util/header'
 
 const Nav = () => {
     const navLink = headerData.menus
-
     const scrollTo = useSmoothScroll()
-
     const handleClick = (e, item) => {
         if (item.type === 'section') {
             e.preventDefault()
@@ -15,21 +13,14 @@ const Nav = () => {
             scrollTo(id)
         }
     }
-
     return (
         <nav>
             <ul>
-                {navLink.map((item) => (
-
-                    <li key={item.id}>
-                        <a
-                            href={`#${item.href}`}
-                            onClick={(e) => handleClick(e, item)}
-                        >
-                            {item.label}
-                        </a>
-                    </li>
-                ))}
+                {navLink.map((item) => (<li key={item.id}>
+                    <a href={`#${item.href}`} onClick={(e) => handleClick(e, item)}>
+                        {item.label}
+                    </a>
+                </li>))}
             </ul>
 
         </nav>
