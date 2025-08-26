@@ -4,5 +4,9 @@ header {
     top: 4rem;
     width: 100%;
 
-    .inner {}
+    .inner {
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+    }
 }

@@ -6,7 +6,7 @@ const Util = () => {
   return (
     <ul>
       {utilData.map((i) => (<li key={i.id}>
-        <a href={i.href}>{i.icon} {i.label}</a>
+        <a href={i.href}><img src={i.icon} alt={i.label} /></a>
       </li>))}
     </ul>
   )

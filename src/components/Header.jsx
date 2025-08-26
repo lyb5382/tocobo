@@ -4,14 +4,12 @@ import Util from './Util'
 import TopBanner from './TopBanner'
 import { headerData } from '../util/header'
 import '../styles/components/header.scss'
+
 const Header = () => {
-
   const headerLogo = headerData.logo
-
   return (
     <div>
       <TopBanner />
-
       <header>
         <div className='inner'>
           <Nav />
@@ -22,7 +20,6 @@ const Header = () => {
           </h1>
           <Util />
         </div>
-        Header
       </header>
     </div>
   )

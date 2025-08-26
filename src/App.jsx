@@ -7,7 +7,6 @@ import Reviews from './sections/Reviews'
 import Products from './sections/Products'
 import './styles/main.scss'
 function App() {
- 
   return (
     <>
       <Header/>
