@@ -9,14 +9,23 @@ import '../styles/section/hero.scss'
 const Hero = () => {
   return (
     <div className='hero-container'>
-      <Swiper>
-
+      <Swiper modules={[Navigation, Pagination, Autoplay]} navigation={{ nextEl: '.arr-next', prevEl: 'arr-prev' }} pagination={{ el: '.swiper-pagination', type: 'fraction' }} loop={true} /*autoplay={true}*/>
         {heroSlides.map((slide) => (
-
-          <SwiperSlide
-            key={slide.id}
-          >{slide.title}</SwiperSlide>
+          <SwiperSlide key={slide.id} className={`hero-slide ${slide.id}`} style={{ backgroundImage: `url(${slide.image.desktop})` }}>
+            <div className="inner">
+              <div className="t-wrap">
+                <h2 className='tit' dangerouslySetInnerHTML={{ __html: slide.title }} />
+                <p className="txt">{slide.subtitle}</p>
+              </div>
+              <a href={slide.ctaHref} className="btn">{slide.ctaText}</a>
+            </div>
+          </SwiperSlide>
         ))}
+        <div className="hero-nav">
+          <div className="arr-prev">prev</div>
+          <div className="swiper-pagination"></div>]
+          <div className="app-next">next</div>
+        </div>
       </Swiper>
     </div>
   )

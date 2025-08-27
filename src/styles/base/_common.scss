@@ -7,6 +7,10 @@
 
     .Section {
         padding: 6rem 0;
+
+        &#Hero {
+            padding: 0;
+        }
     }
 
     .Section,
@@ -19,4 +23,14 @@
             margin: auto;
         }
     }
+}
+
+h2.tit {
+    font-size: 7.3rem;
+    font-weight: 200;
+}
+
+p.txt {
+    font-size: 2.1rem;
+    list-style: 1.2;
 }

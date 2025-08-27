@@ -1,3 +1,5 @@
+const img = (path) => `/img/${path}`
+
 // Hero 슬라이더용 "가짜 DB" 데이터
 export const heroSlides = [
   {
