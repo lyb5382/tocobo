@@ -6,6 +6,7 @@ import Cta from './sections/Cta'
 import Reviews from './sections/Reviews'
 import Products from './sections/Products'
 import TopBanner from './components/TopBanner'
+import TopBtn from './components/TopBtn'
 import './styles/main.scss'
 import { useState } from 'react'
 function App() {
@@ -15,6 +16,7 @@ function App() {
   }
   return (
     <div className={`app-container ${topBn}`}>
+      <TopBtn />
       <TopBanner onClick={upTopBn} />
       <Header />
       <main>
