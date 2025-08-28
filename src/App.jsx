@@ -3,6 +3,7 @@ import Footer from './components/Footer'
 import Hero from './sections/Hero'
 import Brand from './sections/Brand'
 import Cta from './sections/Cta'
+import Hello from './sections/Hello'
 import Reviews from './sections/Reviews'
 import Products from './sections/Products'
 import TopBanner from './components/TopBanner'
@@ -23,6 +24,12 @@ function App() {
         <section id='Hero' className='Section'>
           <Hero />
         </section>
+        <section id='Cta' className='Section'>
+          <Cta />
+        </section>
+        <section id='Hello' className='Section'>
+          <Hello />
+        </section>
         <section id='Brand' className='Section'>
           <Brand />
         </section>
@@ -31,9 +38,6 @@ function App() {
         </section>
         <section id='Reviews' className='Section'>
           <Reviews />
-        </section>
-        <section id='Cta' className='Section'>
-          <Cta />
         </section>
       </main>
       <Footer />

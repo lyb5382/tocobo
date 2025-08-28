@@ -1,8 +1,31 @@
-.top-btn{
+.top-btn {
+    position: fixed;
+    z-index: 5;
+    right: 2rem;
+    bottom: 8rem;
+    font-size: 2rem;
+    color: white;
+    background-color: var(--secondary);
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.tcb {
+    display: flex;
     position: fixed;
     z-index: 5;
     right: 2rem;
     bottom: 2rem;
-    font-size: 3rem;
-    color: rgb(75, 88, 102);
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 5rem;
+    height: 5rem;
+    background-image: url('/public/img/icon_talk.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }

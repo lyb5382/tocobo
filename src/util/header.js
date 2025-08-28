@@ -11,10 +11,11 @@ export const headerData = {
     },
     menus: [
         { id: "Hero", label: "Hero", href: "#Hero", type: "section" },
+        { id: "Cta", label: "Cta", href: "#Cta", type: "section" },
+        { id: "Hello", label: "Hello", href: "#Hello", type: "section" },
         { id: "Brand", label: "Brand", href: "#Brand", type: "section" },
         { id: "Products", label: "Products", href: "#Products", type: "section" },
         { id: "Reviews", label: "Reviews", href: "#Reviews", type: "section" },
-        { id: "Cta", label: "Cta", href: "#Cta", type: "section" },
     ],
     // 상단 공지/배너 (TopBanner용)
     topBanner: {
