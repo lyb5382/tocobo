@@ -1,4 +1,5 @@
-const img = (path) => `/img/${path}`
+const img = (path) => `/img/${path}`;
+
 
 // Hero 슬라이더용 "가짜 DB" 데이터
 export const heroSlides = [
@@ -34,7 +35,7 @@ export const heroSlides = [
   },
   {
     id: "hs-3",
-    title: "Scent-Free, Worry-Free",
+    title: "Scent-Free,<br> Worry-Free",
     subtitle: "Sensitive Skin Friendly",
     desc: "민감 피부를 위한 무향 포뮬러",
     ctaText: "스타터 키트 보러가기",
@@ -49,7 +50,7 @@ export const heroSlides = [
   },
   {
     id: "hs-4",
-    title: "Eco-Conscious Beauty",
+    title: "Eco-Conscious<br> Beauty",
     subtitle: "Vegan & Cruelty-Free",
     desc: "지속 가능성을 생각한 깔끔한 선택",
     ctaText: "혜택보러가기",

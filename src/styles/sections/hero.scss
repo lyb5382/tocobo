@@ -12,8 +12,8 @@
             .inner {
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
-                max-width: 160rem !important;
+                max-width: 160rem;
+
             }
         }
 
@@ -22,7 +22,8 @@
                 color: var(--main-slider01-tit);
             }
 
-            p.text {
+            p.txt {
+
                 color: var(--main-slider01-sub);
             }
         }
@@ -32,7 +33,8 @@
                 color: var(--main-slider02-tit);
             }
 
-            p.text {
+            p.txt {
+
                 color: var(--main-slider02-sub);
             }
         }
@@ -42,17 +44,18 @@
                 color: var(--main-slider03-tit);
             }
 
-            p.text {
+            p.txt {
+
                 color: var(--main-slider03-sub);
             }
 
             a.btn {
-                &::after {
+                &:after {
                     background-color: var(--main-slider03-tit);
                 }
 
                 &:hover {
-                    color: var(--bg);
+                    color: var(--bg)
                 }
             }
         }
@@ -62,17 +65,18 @@
                 color: var(--main-slider04-tit);
             }
 
-            p.text {
+            p.txt {
+
                 color: var(--main-slider04-sub);
             }
 
             a.btn {
-                &::after {
+                &:after {
                     background-color: var(--main-slider04-tit);
                 }
 
                 &:hover {
-                    color: var(--bg);
+                    color: var(--bg)
                 }
             }
         }
@@ -89,6 +93,7 @@
             .arr-next {
                 width: 5rem;
                 height: 1.7rem;
+
                 font-size: 0;
                 background-repeat: no-repeat;
                 background-size: contain;
@@ -126,9 +131,8 @@
                     bottom: 0;
                     right: 0;
                 }
-
-                &::after {
-                    content: '';
+                &:after {
+                    content:"";
                     display: block;
                     width: 1px;
                     background-color: var(--bg);
@@ -136,7 +140,7 @@
                     position: absolute;
                     left: 10%;
                     top: 40%;
-                    transform: rotate(45deg) translate(-50%, -50%);
+                    transform: rotate(45deg) translate(-50%,-50%);
                 }
             }
         }
