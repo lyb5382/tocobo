@@ -1,6 +1,8 @@
 // src/util/footer.js
 const img = (path) => `/img/${path}`;
-
+// src/util/footer.js
+import { FaInstagram, FaYoutube } from "react-icons/fa";
+import { SiKakaotalk } from "react-icons/si";
 // 로고
 export const logoData = {
   src: img("logo.svg"),
@@ -62,5 +64,26 @@ export const footerMenus = [
       { label: "Review", href: "/review" },
       { label: "1:1 CS", href: "/cs" },
     ],
+  },
+];
+
+export const socialLinks = [
+  {
+    id: "kakao",
+    label: "KakaoTalk 채널",
+    href: "https://pf.kakao.com/your-channel",
+    icon: <SiKakaotalk size={22} />,
+  },
+  {
+    id: "instagram",
+    label: "Instagram",
+    href: "https://www.instagram.com/your-instagram",
+    icon: <FaInstagram size={22} />,
+  },
+  {
+    id: "youtube",
+    label: "YouTube",
+    href: "https://www.youtube.com/@your-youtube",
+    icon: <FaYoutube size={22} />,
   },
 ];
