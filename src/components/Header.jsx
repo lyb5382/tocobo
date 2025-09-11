@@ -11,8 +11,9 @@ const Header = ({ mnav, handleNavO, handleNavC }) => {
   const handleClick = (e, item) => {
     if (item.type === 'section') {
       e.preventDefault()
-      const id = item.herf?.startWith('#') ? item.herf.slice(1) : item.id
+      const id = item.href?.startsWith('#') ? item.href.slice(1) : item.id
       scrollTo(id)
+      onNavClose?.()
     }
   }
   const headerLogo = headerData.logo
@@ -29,9 +30,7 @@ const Header = ({ mnav, handleNavO, handleNavC }) => {
           <Util />
         </div>
       </header>
-      {mnav && (
-        <MNav handleClick={handleClick} handleNavC={handleNavC} />
-      )}
+      {mnav && (<MNav handleClick={handleClick} handleNavC={handleNavC} />)}
     </div>
   )
 }

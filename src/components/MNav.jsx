@@ -6,10 +6,10 @@ import { headerData } from '../util/header'
 const MNav = ({ handleClick, handleNavC }) => {
     const navLink = headerData.menus
     return (
-        <div className='m-nav-wrap'>
+        <div className='m-nav-wrap' onClick={(e) => e.stopPropagation()}>
             <div className="m-top">
                 <Util />
-                <a className='m-close-btn' href="#" onClick={(e) => e.stopPropagation()}>
+                <a className='m-close-btn' href="#" onClick={(e) => { e.preventDefault(); e.stopPropagation(); handleNavC() }}>
                     <img src="/img/icon_search_close.png" alt="icon" />
                 </a>
             </div>
