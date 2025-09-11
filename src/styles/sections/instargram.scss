@@ -1,16 +1,15 @@
-.inner.instar-inner {
+.inner.instar-inner{
     h2.tit {
         color: var(--secondary);
     }
-
-    .instar-lst {
+    .instar-lst{
         display: flex;
         gap: 1rem;
-
+        margin-top: 4rem;
         >li {
             // flex: 1;
-            width: clamp(13rem, 15vw, 21.3rem);
-            height: clamp(13rem, 15vw, 21.3rem);
+            width: clamp(13rem ,15vw,21.3rem);
+            height: clamp(13rem ,15vw,21.3rem);
             a{
                 display: block;
                 width: 100%;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { logoData, companyData, customerCenterData, footerMenus, socialLinks } from "../util/footer";
-import Nav from './Nav';
+
 import "../styles/components/footer.scss"
 
 const Footer = () => {
@@ -56,7 +56,14 @@ const Footer = () => {
           </div>
           <ul className="sns-links">
             {socialLinks.map((sns) => (
-              <li key={sns.id}>{sns.icon}</li>
+              <li key={sns.id}>
+                <a href={sns.href} 
+                target="_blank" rel="noreferrer noopener" 
+                aria-label={sns.label} 
+                title={sns.label}>
+                  {React.createElement(sns.icon, { size: 22, "aria-hidden": true })}                                  
+                </a>
+              </li>
             ))}
           </ul>
         </div>
