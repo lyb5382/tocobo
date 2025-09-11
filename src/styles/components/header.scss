@@ -7,7 +7,7 @@ header {
     transition: top .3s ease;
 
     @media screen and (max-width:1600px) {
-        padding: 0 2rem;
+        padding: 0 2rem
     }
 
     @media screen and (max-width:1111px) {
@@ -54,7 +54,7 @@ header {
                 }
             }
 
-            @media screen and (max-width:1099px) {
+            @media screen and (max-width:1111px) {
                 .mob-nav-btn {
                     display: block;
                 }
@@ -63,6 +63,7 @@ header {
                     display: none;
                 }
             }
+
         }
 
         h1.tit {
@@ -79,7 +80,7 @@ header {
             display: flex;
             gap: 1.2rem;
 
-            @media screen and (max-width:599px) {
+            @media screen and (max-width:1111px) {
                 li:not(:last-child) {
                     display: none;
                 }

@@ -9,14 +9,14 @@ const MNav = ({ handleClick, handleNavC }) => {
         <div className='m-nav-wrap'>
             <div className="m-top">
                 <Util />
-                <a className='m-close-btn' href="#" onClick={handleNavC}>
+                <a className='m-close-btn' href="#" onClick={(e) => e.stopPropagation()}>
                     <img src="/img/icon_search_close.png" alt="icon" />
                 </a>
             </div>
             <ul className="m-nav-list">
                 {navLink.map((nav, i) => (
                     <li key={i}>
-                        <a href={nav.href} onClick={(e)=>handleClick(e,nav)}>{nav.label}</a>
+                        <a href={nav.href} onClick={(e) => handleClick(e, nav)}>{nav.label}</a>
                     </li>
                 ))}
             </ul>

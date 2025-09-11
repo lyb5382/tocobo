@@ -17,9 +17,6 @@ function App() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [mnav, setMnav] = useState(false)
   useEffect(() => {
-
-  }, [])
-  useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY
       setIsScrolled(scrollTop > 0)
@@ -27,17 +24,6 @@ function App() {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   })
-  useEffect(() => {
-    document.body.style.overflow = mnav ? 'hidden' : ''
-  }, [mnav])
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 1111) setMnav(false)
-    }
-    handleResize()
-    window.addEventListener('resize', handleResize)
-    return () => window.removeEventListener('resize', handleResize)
-  }, [])
   const handleNavO = () => setMnav(true)
   const handleNavC = () => setMnav(false)
   const upTopBanner = () => {
