@@ -1,10 +1,7 @@
-
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import Hero from "./sections/Hero"
-
 import Cta from "./sections/Cta"
-
 import "./styles/main.scss"
 import TopBanner from "./components/TopBanner"
 import { useState, useEffect } from "react"
@@ -13,34 +10,45 @@ import Hello from "./sections/Hello"
 import Collection from "./sections/Collection"
 import Skincare from "./sections/Skincare"
 import Instargram from "./sections/Instargram"
+import Aos from "aos"
+
 function App() {
-
   const [topBanner, setTopBanner] = useState("")
-
   const [isScrolled, setIsScrolled] = useState(false)
+  const [mnav, setMnav] = useState(false)
+  useEffect(() => {
 
-
+  }, [])
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY
-
       setIsScrolled(scrollTop > 0)
     }
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
-
   })
-
-
+  useEffect(() => {
+    document.body.style.overflow = mnav ? 'hidden' : ''
+  }, [mnav])
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 1111) setMnav(false)
+    }
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+  const handleNavO = () => setMnav(true)
+  const handleNavC = () => setMnav(false)
   const upTopBanner = () => {
     setTopBanner("up")
   }
 
   return (
-    <div className={`app-container  ${topBanner} ${isScrolled ? "scrolled" : ""}`}>
+    <div className={`app-container ${topBanner} ${isScrolled ? "scrolled" : ""}`}>
       <TopBtn />
       <TopBanner onClick={upTopBanner} />
-      <Header />
+      <Header mnav={mnav} handleNavO={handleNavO} handleNavC={handleNavC} />
       <main>
         <section id="Hero" className="Section">
           <Hero />
@@ -51,7 +59,6 @@ function App() {
         <section id="Hello" className="Section">
           <Hello />
         </section>
-
         <section id="Collection" className="Section">
           <Collection />
         </section>
@@ -61,7 +68,6 @@ function App() {
         <section id="Instar" className="Section">
           <Instargram />
         </section>
-
       </main>
       <Footer />
     </div>

@@ -1,20 +1,26 @@
 import React from 'react'
 import Nav from './Nav'
 import Util from './Util'
-
+import MNav from './MNav'
+import useSmoothScroll from '../hooks/useSmoothScroll'
 import { headerData } from '../util/header'
 import "../styles/components/header.scss"
-const Header = () => {
 
+const Header = ({ mnav, handleNavO, handleNavC }) => {
+  const scrollTo = useSmoothScroll()
+  const handleClick = (e, item) => {
+    if (item.type === 'section') {
+      e.preventDefault()
+      const id = item.herf?.startWith('#') ? item.herf.slice(1) : item.id
+      scrollTo(id)
+    }
+  }
   const headerLogo = headerData.logo
-
   return (
     <div>
-
-
       <header>
         <div className="inner">
-          <Nav />
+          <Nav handleClick={handleClick} handleNavO={handleNavO} />
           <h1 className="tit">
             <a href={headerLogo.href}>
               <img src={headerLogo.src} alt={headerLogo.alt} />
@@ -22,8 +28,10 @@ const Header = () => {
           </h1>
           <Util />
         </div>
-
       </header>
+      {mnav && (
+        <MNav handleClick={handleClick} handleNavC={handleNavC} />
+      )}
     </div>
   )
 }
