@@ -11,18 +11,13 @@ const Collection = () => {
   const nextRef = useRef(null)
   const swiperRef = useRef(null)
   useEffect(() => {
-    if (swiperRef.current &&
-      swiperRef.current.params &&
-      prevRef.current &&
-      nextRef.current
-    ) {
+    if (swiperRef.current && swiperRef.current.params && prevRef.current && nextRef.current) {
       swiperRef.current.params.navigation.prevEl = prevRef.current
       swiperRef.current.params.navigation.nextEl = nextRef.current
       swiperRef.current.navigation.destroy()
       swiperRef.current.navigation.init()
       swiperRef.current.navigation.update()
     }
-
   }, [])
 
   return (
