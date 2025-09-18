@@ -14,6 +14,13 @@
                 align-items: center;
                 max-width: 160rem;
 
+                @media screen and (max-width:1111px) {
+                    .t-wrap {
+                        position: absolute;
+                        left: 2rem;
+                        bottom: 11.5rem;
+                    }
+                }
             }
         }
 
@@ -23,7 +30,6 @@
             }
 
             p.txt {
-
                 color: var(--main-slider01-sub);
             }
         }
@@ -34,7 +40,6 @@
             }
 
             p.txt {
-
                 color: var(--main-slider02-sub);
             }
         }
@@ -45,7 +50,6 @@
             }
 
             p.txt {
-
                 color: var(--main-slider03-sub);
             }
 
@@ -66,7 +70,6 @@
             }
 
             p.txt {
-
                 color: var(--main-slider04-sub);
             }
 
@@ -93,7 +96,6 @@
             .arr-next {
                 width: 5rem;
                 height: 1.7rem;
-
                 font-size: 0;
                 background-repeat: no-repeat;
                 background-size: contain;
@@ -131,8 +133,9 @@
                     bottom: 0;
                     right: 0;
                 }
+
                 &:after {
-                    content:"";
+                    content: "";
                     display: block;
                     width: 1px;
                     background-color: var(--bg);
@@ -140,7 +143,33 @@
                     position: absolute;
                     left: 10%;
                     top: 40%;
-                    transform: rotate(45deg) translate(-50%,-50%);
+                    transform: rotate(45deg) translate(-50%, -50%);
+                }
+            }
+
+            @media screen and (max-width:1111px) {
+                bottom: 3.9rem;
+                left: 2rem;
+
+                .arr-prev,
+                .arr-next {
+                    width: 4rem;
+                }
+
+                .arr-prev {
+                    background-image: url(/img/r_arrow_prev.svg);
+                }
+
+                .arr-next {
+                    background-image: url(/img/r_arrow_next.svg);
+                }
+
+                .swiper-pagination-fraction {
+                    color: var(--primary);
+
+                    &::after {
+                        background-color: var(--primary);
+                    }
                 }
             }
         }

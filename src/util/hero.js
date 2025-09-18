@@ -1,7 +1,5 @@
 const img = (path) => `/img/${path}`;
 
-
-// Hero 슬라이더용 "가짜 DB" 데이터
 export const heroSlides = [
   {
     id: "hs-1",
@@ -26,7 +24,7 @@ export const heroSlides = [
     ctaText: "컬러립밤 보러가기",
     ctaHref: "/story/hydration",
     image: {
-      desktop:  img("main_d_2.png"),
+      desktop: img("main_d_2.png"),
       mobile: img("main_mo_2.jpg"),
     },
     alt: "보습 라인 배너",
@@ -35,13 +33,13 @@ export const heroSlides = [
   },
   {
     id: "hs-3",
-    title: "Scent-Free,<br> Worry-Free",
+    title: "Scent-Free, Worry-Free",
     subtitle: "Sensitive Skin Friendly",
     desc: "민감 피부를 위한 무향 포뮬러",
     ctaText: "스타터 키트 보러가기",
     ctaHref: "/collections/sensitive",
     image: {
-      desktop:  img("main_d_3.png"),
+      desktop: img("main_d_3.png"),
       mobile: img("main_mo_3.jpg"),
     },
     alt: "민감 피부 라인 배너",
@@ -50,13 +48,13 @@ export const heroSlides = [
   },
   {
     id: "hs-4",
-    title: "Eco-Conscious<br> Beauty",
+    title: "Eco-Conscious Beauty",
     subtitle: "Vegan & Cruelty-Free",
     desc: "지속 가능성을 생각한 깔끔한 선택",
     ctaText: "혜택보러가기",
     ctaHref: "/about",
     image: {
-      desktop:  img("main_d_4.png"),
+      desktop: img("main_d_4.png"),
       mobile: img("main_mo_4.jpg"),
     },
     alt: "브랜드 철학 배너",
@@ -64,3 +62,6 @@ export const heroSlides = [
     order: 4,
   },
 ];
+
+export const getActiveHeroSlides = () =>
+  heroSlides.filter(s => s.active).sort((a, b) => a.order - b.order);

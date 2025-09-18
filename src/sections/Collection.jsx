@@ -10,9 +10,7 @@ const Collection = () => {
   const prevRef = useRef(null)
   const nextRef = useRef(null)
   const swiperRef = useRef(null)
-
   useEffect(() => {
-
     if (swiperRef.current &&
       swiperRef.current.params &&
       prevRef.current &&
@@ -41,14 +39,12 @@ const Collection = () => {
         loop={true}
         pagination={{
           type: 'progressbar',
-        }}        
+        }}
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         modules={[Pagination, Navigation]}
       >
         {collectionData.map((sl, i) => (
-
           <SwiperSlide key={i}>
-
             <a href="#">
               <div className="info-wrap">
                 <div className="info-tit">{sl.title}</div>
@@ -62,11 +58,8 @@ const Collection = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      {/* </SwiperSlide> */}
-
-
-      <a href="#" className="prev" ref={prevRef}>prev</a>
-      <a href="#" className="next" ref={nextRef}>next</a>
+      <a href="#" className="prev" ref={prevRef}></a>
+      <a href="#" className="next" ref={nextRef}></a>
     </div>
   )
 }
