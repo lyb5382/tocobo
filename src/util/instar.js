@@ -25,13 +25,13 @@ const instar = [
     alt: "자연 친화적인 무드의 비건 화장품 이미지",
     link: "/community",
   },
-    {
+  {
     id: 5,
     image: img("instar5.jpg"),
     alt: "밝은 하늘과 함께 연출된 스킨케어 제품 이미지",
     link: "/shop",
   },
-    {
+  {
     id: 6,
     image: img("instar6.jpg"),
     alt: "밝은 하늘과 함께 연출된 스킨케어 제품 이미지",
@@ -40,5 +40,4 @@ const instar = [
 ];
 
 
-  export default instar
-  
+export default instar

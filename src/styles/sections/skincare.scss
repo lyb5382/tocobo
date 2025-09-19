@@ -29,6 +29,7 @@
                     background-position: center;
                     background-repeat: no-repeat;
                     background-size: cover;
+
                     a {
                         display: block;
                         height: 100%;
@@ -50,13 +51,14 @@
             height: 55rem;
         }
     }
-    
+
     @media screen and (max-width:799px) {
 
         .slider-wrap {
             height: 40rem;
         }
     }
+
     @media screen and (max-width:599px) {
 
         .slider-wrap {

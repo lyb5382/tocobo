@@ -1,6 +1,7 @@
 import React from 'react'
 import instar from "../util/instar"
 import "../styles/sections/instargram.scss"
+
 const Instargram = () => {
   return (
     <div className='inner instar-inner'>
@@ -14,7 +15,6 @@ const Instargram = () => {
       </div>
       <ul className="instar-lst">
         {instar.map((i) => (
-
           <li key={i.id}>
             <a
               style={{ backgroundImage: `url(${i.image})` }}
