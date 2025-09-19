@@ -21,9 +21,6 @@
                         bottom: 12.5rem;
                     }
                 }
-
-
-
             }
         }
 
@@ -33,7 +30,6 @@
             }
 
             p.txt {
-
                 color: var(--main-slider01-sub);
             }
         }
@@ -44,7 +40,6 @@
             }
 
             p.txt {
-
                 color: var(--main-slider02-sub);
             }
         }
@@ -55,7 +50,6 @@
             }
 
             p.txt {
-
                 color: var(--main-slider03-sub);
             }
 
@@ -76,7 +70,6 @@
             }
 
             p.txt {
-
                 color: var(--main-slider04-sub);
             }
 
@@ -103,7 +96,6 @@
             .arr-next {
                 width: 5rem;
                 height: 1.7rem;
-
                 font-size: 0;
                 background-repeat: no-repeat;
                 background-size: contain;
@@ -163,19 +155,22 @@
                 .arr-next {
                     width: 4rem;
                 }
-                 .arr-prev {
+
+                .arr-prev {
                     background-image: url(/img/r_arrow_prev.svg);
-                 }
-                 .arr-next {
+                }
+
+                .arr-next {
                     background-image: url(/img/r_arrow_next.svg);
-                 }
-                 .swiper-pagination-fraction {
+                }
+
+                .swiper-pagination-fraction {
                     color: var(--primary);
 
                     &:after {
                         background-color: var(--primary);
                     }
-                 }
+                }
             }
         }
     }

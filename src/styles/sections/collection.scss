@@ -76,14 +76,20 @@
         display: block;
         width: 3.5rem;
         height: 6.7rem;
+        font-size: 0;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        cursor: pointer;
     }
 
     .prev {
         left: -5rem;
-        // background-image: url('/img/...');
+        background-image: url(/img/r_arrow_prev.svg);
     }
 
     .next {
         right: -5rem;
+        background-image: url(/img/r_arrow_next.svg);
     }
 }
