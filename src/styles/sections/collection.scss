@@ -51,7 +51,7 @@
             }
         }
 
-        @media screen and (max-width:1111px) {
+        @media screen and (max-width:1200px) {
             width: clamp(90rem, 90vw, 110rem);
 
             .img-wrap {
@@ -64,6 +64,8 @@
                 margin: 3rem 0;
             }
         }
+
+
     }
 
     .prev,
@@ -78,11 +80,10 @@
 
     .prev {
         left: -5rem;
-        background-image: url(/img/icon_main_ban_arrow_prev.svg);
+        // background-image: url('/img/...');
     }
 
     .next {
         right: -5rem;
-        background-image: url(/img/icon_main_ban_arrow_next.svg);
     }
 }

@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
-
 @font-face {
   font-family: 'Circular Std';
   src: url('/fonts/CircularStd-Book.ttf') format('truetype');
@@ -20,47 +19,45 @@
   font-weight: 900;
   font-style: italic;
 }
-
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 3px;
+    width: 5px;
+    height: 3px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #E7E7E7;
+    background-color: #E7E7E7;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #DC272D;
-  border-radius: 50px;
+    background: var(--primary);
+    border-radius: 50px;
 }
-
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  font-size: 62.5%;
+    font-size: 62.5%;
 }
 
 html,
 body {
-  height: 100%;
+    height: 100%;
 }
 
 body {
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Apple SD Gothic Neo, Noto Sans KR, sans-serif;
-  background-color: var(--bg);
-  color: var(--fg);
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Apple SD Gothic Neo, Noto Sans KR, sans-serif;
+    background-color: var(--bg);
+    color: var(--fg);
 }
 
 * {
-  font-family: "Circular Std", "Noto Sans KR";
-  letter-spacing: -0.05em;
+    font-family: "Circular Std", "Noto Sans KR";
+    letter-spacing: -0.05em;
 }
 
 h1,
@@ -69,9 +66,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Circular Std", "Noto Sans KR";
-  font-weight: 700;
+    font-family: "Circular Std", "Noto Sans KR";
+    font-weight: 700;
 }
+
+
 
 button {
   background: none;
@@ -90,11 +89,7 @@ ol,
 dl {
   list-style: none;
 }
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
+a{text-decoration: none;color: inherit;}
 
 img {
   max-width: 100%;
