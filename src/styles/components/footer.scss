@@ -98,6 +98,14 @@ footer {
                 display: none;
             }
 
+            .sns-links {
+                display: flex;
+                color: var(--primary);
+                gap: 3rem;
+                margin-top: 5rem;
+                justify-content: center;
+            }
+
             @media screen and (max-width:1111px) {
                 .footer-legal {
                     display: block;
@@ -112,6 +120,7 @@ footer {
                     h4 {
                         position: relative;
                         margin-bottom: 0;
+
                         .m-plus,
                         .m-plus::after {
                             display: block;
@@ -124,20 +133,24 @@ footer {
                             top: 50%;
                             transition: all .3s;
                         }
+
                         .m-plus::after {
                             transform: rotate(90deg);
                         }
                     }
+
                     .hidden {
                         height: 0;
                         overflow: hidden;
                         transition: height 0.4s ease;
-                        .cs-box{
+
+                        .cs-box {
                             margin-top: 2rem;
                         }
                     }
+
                     &.open {
-                        h4{
+                        h4 {
                             .m-plus::after {
                                 transform: rotate(0deg);
                             }

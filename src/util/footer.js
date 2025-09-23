@@ -88,7 +88,7 @@ export const socialLinks = [
     icon: FaInstagramSquare
   },
   {
-    id: "youtube", 
+    id: "youtube",
     label: "YouTube",
     href: "https://www.youtube.com/@your-youtube",
     icon: FaYoutube
